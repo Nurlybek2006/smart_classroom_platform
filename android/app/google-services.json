@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "990356307121",
+    "project_id": "smart-classroom-kz",
+    "storage_bucket": "smart-classroom-kz.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:990356307121:android:23ac34b3b2746a74287690",
+        "android_client_info": {
+          "package_name": "com.example.smart_classroom_platform"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDCykOiDdDVhAHkEQQ2Wy4Sq_3qNAmYM7w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
