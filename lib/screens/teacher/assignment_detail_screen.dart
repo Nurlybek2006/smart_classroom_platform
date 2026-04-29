@@ -139,11 +139,11 @@ class _AssignmentDetailScreenState extends State<AssignmentDetailScreen> {
                               DateFormat('dd.MM.yyyy HH:mm').format(sub.submittedAt),
                               style: TextStyle(fontSize: 12, color: AppColors.textMuted),
                             ),
-                            if (sub.textAnswer != null && sub.textAnswer!.isNotEmpty)
+                            if (sub.textAnswer.isNotEmpty)
                               Padding(
                                 padding: const EdgeInsets.only(top: 4),
                                 child: Text(
-                                  sub.textAnswer!,
+                                  sub.textAnswer,
                                   style: TextStyle(
                                     fontSize: 12,
                                     color: AppColors.textSecondary,
@@ -296,8 +296,8 @@ class _GradingSheetState extends State<_GradingSheet> {
     if (widget.submission.score != null) {
       _scoreController.text = widget.submission.score!.toInt().toString();
     }
-    if (widget.submission.feedback != null) {
-      _feedbackController.text = widget.submission.feedback!;
+    if (widget.submission.feedback.isNotEmpty) {
+      _feedbackController.text = widget.submission.feedback;
     }
   }
 
@@ -426,7 +426,7 @@ class _GradingSheetState extends State<_GradingSheet> {
             ),
 
             // Student's answer
-            if (sub.textAnswer != null && sub.textAnswer!.isNotEmpty) ...[
+            if (sub.textAnswer.isNotEmpty) ...[
               const SizedBox(height: 16),
               Container(
                 width: double.infinity,
@@ -449,7 +449,7 @@ class _GradingSheetState extends State<_GradingSheet> {
                     ),
                     const SizedBox(height: 6),
                     Text(
-                      sub.textAnswer!,
+                      sub.textAnswer,
                       style: const TextStyle(
                         fontSize: 14,
                         color: AppColors.textPrimary,

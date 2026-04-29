@@ -569,7 +569,7 @@ class _AddGradeFormState extends State<_AddGradeForm> {
 
           // ── Step 1: Course ──────────────────────────────────────────
           DropdownButtonFormField<String>(
-            value: _courseId,
+            initialValue: _courseId,
             decoration: _dec('Курс'),
             hint: const Text('Курсты таңдаңыз'),
             isExpanded: true,
@@ -612,7 +612,7 @@ class _AddGradeFormState extends State<_AddGradeForm> {
               )
             else
               DropdownButtonFormField<String>(
-                value: _assignmentId,
+                initialValue: _assignmentId,
                 decoration: _dec('Тапсырма'),
                 hint: const Text('Тапсырманы таңдаңыз'),
                 isExpanded: true,
